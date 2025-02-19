@@ -28,16 +28,16 @@
             <div class="container">
                 <ul>
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="#sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="#">Em destaque</a>
+                        <a href="#destaque">Em destaque</a>
                     </li>
                     <li>
-                        <a href="#">Promoções</a>
+                        <a href="#promo">Promoções</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -52,7 +52,7 @@
         <section id="sobre-a-loja">
             <div class="container container-flex">
                 <img src="images/loja.jpg" alt="Imagem da Loja EBAC Motors">
-                <div>
+                <div id="sobre">
                     <h2>Sobre a EBAC Motors</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequuntur sequi hic cum perspiciatis maxime eveniet a architecto nobis quis, perferendis dignissimos eum? Hic culpa animi consequatur, amet dolores nisi.
                     </p>
@@ -67,7 +67,7 @@
         </section>
 
         <section>
-            <div class="container">
+            <div class="container" id="destaque">
                 <h2>Em destaque</h2>
                 <ul class="container-flex lista-veiculos">
                     <li>
@@ -117,7 +117,7 @@
         </section>
 
         <section>
-            <div class="container">
+            <div class="container" id="promo">
                 <h2>Promoções</h2>
                 <ul class="container-flex lista-veiculos">
                     <li>
@@ -183,6 +183,59 @@
                 </ul>
             </div>
         </section>
+
+        <section>
+            <div class="container" id="contato">
+                <h2>Entre em contato</h2>
+                <form>
+                    <div class="form-campo">
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" placeholder="nome completo" required>
+                    </div>
+                    <div class="form-campo">
+                        <label for="telefone">Telefone: </label>
+                        <input type="tel" id="telefone" placeholder="seu telefone" required>
+                    </div>
+                    <div class="form-campo">
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-campo">
+                        <label for="veiculo-interesse">Veiculo de interesse: </label>
+                        <input type="text" id="veiculo-interesse" placeholder="Ex: Fusca, BMW, Mercedes" required>
+                    </div>
+                    <div class="form-campo">
+                        <label for="mensagem">Mensagem: </label>
+                        <textarea id="mensagem" placeholder="digite sua mensagem aqui..." required></textarea>
+
+                    </div>
+                    <button type="submit" id="form-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container container-flex">
+                <p>2025 &copy; EBAC Motors - Todos os direitos reservados</p>
+                <ul class="container-flex">
+                    <li>
+                        <a href="#">
+                            <img src="icones/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="icones/instagram.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="icones/youtube.png" alt="YouTube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
