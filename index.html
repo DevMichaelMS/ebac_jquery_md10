@@ -184,29 +184,29 @@
             </div>
         </section>
 
-        <section>
+        <section class="contato">
             <div class="container" id="contato">
                 <h2>Entre em contato</h2>
                 <form>
                     <div class="form-campo">
                         <label for="nome">Nome: </label>
-                        <input type="text" id="nome" placeholder="nome completo" required>
+                        <input type="text" id="nome" placeholder="nome completo" name="nome" required>
                     </div>
                     <div class="form-campo">
                         <label for="telefone">Telefone: </label>
-                        <input type="tel" id="telefone" placeholder="seu telefone" required>
+                        <input type="tel" id="telefone" name="telefone" required>
                     </div>
                     <div class="form-campo">
                         <label for="email">E-mail: </label>
-                        <input type="email" id="email" placeholder="seu@email.com" required>
+                        <input type="email" id="email" placeholder="seu@email.com" name="email" required>
                     </div>
                     <div class="form-campo">
                         <label for="veiculo-interesse">Veiculo de interesse: </label>
-                        <input type="text" id="veiculo-interesse" placeholder="Ex: Fusca, BMW, Mercedes" required>
+                        <input type="text" id="veiculo-interesse" placeholder="Ex: Fusca, BMW, Mercedes" name="veiculo" required>
                     </div>
                     <div class="form-campo">
                         <label for="mensagem">Mensagem: </label>
-                        <textarea id="mensagem" placeholder="digite sua mensagem aqui..." required></textarea>
+                        <textarea id="mensagem" placeholder="digite sua mensagem aqui..." name="mensagem" required></textarea>
 
                     </div>
                     <button type="submit" id="form-button">Enviar</button>
@@ -240,7 +240,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
